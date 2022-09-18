@@ -1,0 +1,12 @@
+# from comand line
+# -a (account name) -u (username) -P (for password input)
+snowsql -a wl02607.us-east-2.aws -u Prestontrial -P
+
+# from snowsql (in command line)
+>use database models;
+
+>use schema MODEL_REPO;
+
+# this took about 30 seconds for me
+>put file://c:\Users\Preston\USE_lite_2.zip @MODEL_REPO auto_compress=false;
+
